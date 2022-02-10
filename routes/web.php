@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('geadmin', [App\Http\Controllers\HomeController::class, 'geadmin'])->name('geadmin');
+Route::post('postinfo', [App\Http\Controllers\HomeController::class, 'postinfo'])->name('postinfo');
+Route::get('delete/{id}', [App\Http\Controllers\HomeController::class, 'delete'])->name('delete');
