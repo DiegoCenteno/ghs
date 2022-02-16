@@ -39,7 +39,7 @@ class HomeController extends Controller
     {
         $aa = new Tablea;
         $aa->title = $request->title;
-        $aa->description = $request->description;
+        $aa->description = $request->descripcion;
         $aa->status = 1;
         $aa->save();
         return redirect()->back()->with('message', 'ERROR EN LA ACTUALIZACIÓN');
